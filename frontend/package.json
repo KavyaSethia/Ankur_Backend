@@ -2,7 +2,7 @@
   "name": "ankur_fr",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:7070",
+  "proxy": "https://ankurproject.onrender.com",
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
