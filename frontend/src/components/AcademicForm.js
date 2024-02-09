@@ -55,7 +55,7 @@ const AcademicForm = () => {
       };
 
       const response = await axios.post(
-        "http://localhost:7070/api/user/academics",
+        "https://ankurproject.onrender.com/api/user/academics",
         updatedFormData
       );
       if (response.status === 201) {
