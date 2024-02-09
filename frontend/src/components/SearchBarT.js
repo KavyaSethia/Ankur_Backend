@@ -13,7 +13,7 @@ const SearchBarT = () => {
     try {
       const loggedInTherapistId = JSON.parse(localStorage.getItem("userInfo"))._id;
       const response = await axios.get(
-        `http://localhost:7070/api/user/searchstt?searchTerm=${searchTerm}&therapistId=${loggedInTherapistId}`
+        `https://ankurproject.onrender.com/api/user/searchstt?searchTerm=${searchTerm}&therapistId=${loggedInTherapistId}`
       );
       setStudents(response.data);
     } catch (error) {
