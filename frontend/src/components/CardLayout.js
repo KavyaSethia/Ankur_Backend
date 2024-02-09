@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComment, faPhone, faUsers, faChartBar, faGamepad, faBook } from "@fortawesome/free-solid-svg-icons";
+import { faComment, faPhone, faUsers, faChartBar, faGamepad, faBook, faStethoscope } from "@fortawesome/free-solid-svg-icons";
 
-const CardLayout = ({ toggleFeedbackForm }) => {
+const CardLayout = ({ toggleFeedbackForm, toggleDairy }) => {
   return (
     <div>
       <Row className="card-container">
@@ -66,10 +66,21 @@ const CardLayout = ({ toggleFeedbackForm }) => {
         <Col xs={12} sm={6} md={4} lg={3}>
           <Card className="text-center">
             <Card.Body>
-              <FontAwesomeIcon icon={faBook} size="3x" />
+              <FontAwesomeIcon icon={faStethoscope} size="3x" />
               <Card.Title>Therapy Sessions</Card.Title>
               <Card.Text>View your past therapy sessions</Card.Text>
               <Card.Link href="/therapy">View Sessions</Card.Link>
+            </Card.Body>
+          </Card>
+        </Col>
+        {/* Dairy Entry */}
+        <Col xs={12} sm={6} md={4} lg={3}>
+          <Card className="text-center">
+            <Card.Body>
+              <FontAwesomeIcon icon={faBook} size="3x" />
+              <Card.Title>My Dairy</Card.Title>
+              <Card.Text>Write your daily diary entries</Card.Text>
+              <Card.Link onClick={toggleDairy}> Write Dairy</Card.Link>
             </Card.Body>
           </Card>
         </Col>

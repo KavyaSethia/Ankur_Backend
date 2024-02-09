@@ -4,12 +4,18 @@ import Sidebar from "../components/Sidebar";
 import CardLayout from "../components/CardLayout";
 import Navigation from "../components/Navigation";
 import FeedbackFormS from "../components/FeedbackFormS";
+import Dairy from "../components/Dairy";
 
 const DashboardS = () => {
   const [showFeedbackForm, setShowFeedbackForm] = useState(false);
+  const [showDairy, setShowDairy] = useState(false);
 
   const toggleFeedbackForm = () => {
     setShowFeedbackForm(!showFeedbackForm);
+  };
+
+  const toggleDairy = () => {
+    setShowDairy(!showDairy);
   };
 
   return (
@@ -24,8 +30,9 @@ const DashboardS = () => {
           {/* Main Content */}
           <Col sm={9} md={10} className="main-content">
             <h2>Welcome to the Dashboard</h2>
-            <CardLayout toggleFeedbackForm={toggleFeedbackForm} />
+            <CardLayout toggleFeedbackForm={toggleFeedbackForm} toggleDairy={toggleDairy} />
             {showFeedbackForm && <FeedbackFormS />}
+            {showDairy && <Dairy />}
           </Col>
         </Row>
       </Container>
