@@ -48,7 +48,7 @@ import {
             Authorization: `Bearer ${user.token}`,
           },
         };
-        const { data } = await axios.get(`http://localhost:7070/api/user?search=${search}`, config);
+        const { data } = await axios.get(`https://ankurproject.onrender.com/api/user?search=${search}`, config);
         setLoading(false);
         setSearchResult(data);
       } catch (error) {
@@ -71,7 +71,7 @@ import {
             Authorization: `Bearer ${user.token}`,
           },
         };
-        const { data } = await axios.post("http://localhost:7070/api/chat", { userId }, config);
+        const { data } = await axios.post("https://ankurproject.onrender.com/api/chat", { userId }, config);
         if (!chats.find((c) => c._id === data._id)) setChats([data, ...chats]);
   
         setSelectedChat(data);
