@@ -30,7 +30,7 @@ const EditProfileModal = ({ show, handleClose, userData }) => {
   const handleSearchEducators = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:7070/api/user/search?role=educator&searchTerm=${searchTerm}`
+        `https://ankurproject.onrender.com/api/user/search?role=educator&searchTerm=${searchTerm}`
       );
       setEducatorSearchResults(response.data);
     } catch (error) {
@@ -41,7 +41,7 @@ const EditProfileModal = ({ show, handleClose, userData }) => {
   const handleSearchTherapists = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:7070/api/user/search?role=therapist&searchTerm=${searchTerm}`
+        `https://ankurproject.onrender.com/api/user/search?role=therapist&searchTerm=${searchTerm}`
       );
       setTherapistSearchResults(response.data);
     } catch (error) {
@@ -86,7 +86,7 @@ const EditProfileModal = ({ show, handleClose, userData }) => {
       };
       //console.log("Updated fields:", updatedFields);
       const response = await axios.put(
-        `http://localhost:7070/api/user/${userData._id}`,
+        `https://ankurproject.onrender.com/api/user/${userData._id}`,
         updatedFields
       );
 
