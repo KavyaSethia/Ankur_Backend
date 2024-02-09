@@ -53,7 +53,7 @@ const Signup = () => {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:7070/api/user",
+        "https://ankurproject.onrender.com/api/user",
         {
           name: nameOfUser,
           email,
