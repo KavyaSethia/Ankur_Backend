@@ -50,7 +50,7 @@ const Login = () => {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:7070/api/user/login",
+        "http://ankur-backend-fnzd.vercel.app/api/user/login",
         { email, password },
         config
       );

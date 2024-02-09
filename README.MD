@@ -40,6 +40,27 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+
+
+### For the game to host on local server
+
+## **Node.js**  `http-server`
+
+If you have Node.js installed, you can use http-server, a simple zero-configuration command-line HTTP server. First, install http-server globally using npm:
+`npm install -g http-server`
+
+Then, navigate to your project's build directory and run `http-server`.
+
+Access your project at the provided URL, typically `http://localhost:8080` .If port 8080 is already in use, http-server will automatically try to use another port.
+
+
+## **PHP** `Built-in Server`
+
+If you have PHP installed, navigate to your project's build directory and run:
+`php -S localhost:8000`
+
+Access your project at `http://localhost:8000` in your web browser.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

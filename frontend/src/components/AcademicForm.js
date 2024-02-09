@@ -55,7 +55,7 @@ const AcademicForm = () => {
       };
 
       const response = await axios.post(
-        "http://localhost:7070/api/user/academics",
+        "http://ankur-backend-fnzd.vercel.app/api/user/academics",
         updatedFormData
       );
       if (response.status === 201) {

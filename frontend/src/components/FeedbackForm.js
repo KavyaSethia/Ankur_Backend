@@ -63,7 +63,7 @@ const FeedbackForm = () => {
       };
 
       const response = await axios.post(
-        "http://localhost:7070/api/user/feedback",
+        "http://ankur-backend-fnzd.vercel.app/api/user/feedback",
         updatedFormData
       );
       if (response.status === 201) {

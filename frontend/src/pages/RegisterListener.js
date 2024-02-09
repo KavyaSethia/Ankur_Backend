@@ -82,7 +82,7 @@ import Navigation from "../components/Navigation";
           },
         };
         const { data } = await axios.post(
-          "http://localhost:7070/api/user/listener",
+          "http://ankur-backend-fnzd.vercel.app/api/user/listener",
           {
             name: nameOfUser,
             email,
