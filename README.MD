@@ -42,9 +42,9 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 
 
-##For the game to host on local server
+### For the game to host on local server
 
-### **Node.js**  `http-server`
+## **Node.js**  `http-server`
 
 If you have Node.js installed, you can use http-server, a simple zero-configuration command-line HTTP server. First, install http-server globally using npm:
 `npm install -g http-server`
@@ -54,7 +54,7 @@ Then, navigate to your project's build directory and run `http-server`.
 Access your project at the provided URL, typically `http://localhost:8080` .If port 8080 is already in use, http-server will automatically try to use another port.
 
 
-### **PHP** `Built-in Server`
+## **PHP** `Built-in Server`
 
 If you have PHP installed, navigate to your project's build directory and run:
 `php -S localhost:8000`
