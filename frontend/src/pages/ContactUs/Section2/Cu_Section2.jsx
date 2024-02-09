@@ -26,8 +26,8 @@ const Cu_Section2 = () => {
               <div className="CU_section2_gridContainer-innerDiv-textContainer">
                 <div className="CU_section2-innerDiv-text1">Visit Us:</div>
                 <div className="CU_section2-innerDiv-text2">
-                  Medicaps University
-                  <br /> Rau Sqaure
+                  Indira Gandhi Delhi Technical University for Women
+                  <br /> New Delhi, India
                 </div>
               </div>
             </div>
@@ -45,7 +45,7 @@ const Cu_Section2 = () => {
               <div className="CU_section2_gridContainer-innerDiv-textContainer">
                 <div className="CU_section2-innerDiv-text1">Mail Us:</div>
                 <div className="CU_section2-innerDiv-text2">
-                easeuplife247@gmail.com
+                project_ankur@gmail.com
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@ const Cu_Section2 = () => {
               <div className="CU_section2_gridContainer-innerDiv-textContainer">
                 <div className="CU_section2-innerDiv-text1">Phone:</div>
                 <div className="CU_section2-innerDiv-text2">
-                  +91 88789 *****
+                  +91 84484 *****
                 </div>
               </div>
             </div>
