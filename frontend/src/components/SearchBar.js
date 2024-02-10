@@ -13,7 +13,7 @@ const SearchBar = () => {
     try {
       const loggedInEducatorId = JSON.parse(localStorage.getItem("userInfo"))._id;
       const response = await axios.get(
-        `http://ankur-backend-fnzd.vercel.app/api/user/searchst?searchTerm=${searchTerm}&educatorId=${loggedInEducatorId}`
+        `https://ankurproject.onrender.com/api/user/searchst?searchTerm=${searchTerm}&educatorId=${loggedInEducatorId}`
       );
       setStudents(response.data);
     } catch (error) {

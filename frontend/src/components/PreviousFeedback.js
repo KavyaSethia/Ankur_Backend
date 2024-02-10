@@ -15,7 +15,7 @@ const PreviousFeedbacks = ({ student, sender }) => {
             "Content-type": "application/json",
           },
         };
-        const response = await axios.post(`http://ankur-backend-fnzd.vercel.app/api/user/prevfeedback`,
+        const response = await axios.post(`https://ankurproject.onrender.com/api/user/prevfeedback`,
           { studentId: student._id, loggedInUserId: sender._id },
           config
         );

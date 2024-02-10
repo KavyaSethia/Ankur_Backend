@@ -8,7 +8,7 @@ const PreviousAcademicResults = ({ student }) => {
   useEffect(() => {
     const fetchResults = async () => {
       try {
-        const response = await axios.post('http://ankur-backend-fnzd.vercel.app/api/user/prevacademicresult', { studentId: student._id });
+        const response = await axios.post('https://ankurproject.onrender.com/api/user/prevacademicresult', { studentId: student._id });
         setResults(response.data);
       } catch (error) {
         console.error('Error fetching results:', error.message);
