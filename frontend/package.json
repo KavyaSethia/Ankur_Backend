@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "https://ankurproject.onrender.com",
+
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
@@ -30,6 +31,7 @@
     "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.1",
     "react-scrollable-feed": "^2.0.1",
+    "react-sketch-canvas": "^6.2.0",
     "redux": "^5.0.1",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^3.1.0",
