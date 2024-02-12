@@ -27,7 +27,7 @@ const Navigation = () => {
             </LinkContainer>
 
             <LinkContainer to="/blogs">
-              <Nav.Link>Blogs</Nav.Link>
+              <Nav.Link>Games</Nav.Link>
             </LinkContainer>
 
             <LinkContainer to="/PandC">
