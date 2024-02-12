@@ -22,7 +22,7 @@ const MyChats = () => {
           Authorization: `Bearer ${user.token}`,
         },
       };
-      const { data } = await axios.get("http://localhost:7070/api/chat", config);
+      const { data } = await axios.get("https://ankurproject.onrender.com/api/chat", config);
       console.log(data);
       setChats(data);
     } catch (error) {

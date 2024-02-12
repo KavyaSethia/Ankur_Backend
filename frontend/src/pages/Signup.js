@@ -53,7 +53,7 @@ const Signup = () => {
         },
       };
       const { data } = await axios.post(
-        "http://ankur-backend-fnzd.vercel.app/api/user",
+        "https://ankurproject.onrender.com/api/user",
         {
           name: nameOfUser,
           email,

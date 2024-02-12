@@ -73,7 +73,7 @@ const SideDrawer = () => {
       };
       //console.log("data");
       const { data } = await axios.get(
-        `http://localhost:7070/api/user?search=${search}`,
+        `https://ankurproject.onrender.com/api/user?search=${search}`,
         config
       );
       //console.log(data);
@@ -100,7 +100,7 @@ const SideDrawer = () => {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:7070/api/chat",
+        "https://ankurproject.onrender.com/api/chat",
         { userId },
         config
       );

@@ -50,7 +50,7 @@ const Login = () => {
         },
       };
       const { data } = await axios.post(
-        "http://ankur-backend-fnzd.vercel.app/api/user/login",
+        "https://ankurproject.onrender.com/api/user/login",
         { email, password },
         config
       );

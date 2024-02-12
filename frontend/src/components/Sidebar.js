@@ -42,7 +42,7 @@ const Sidebar = () => {
       const fetchUserData = async () => {
         try {
           const response = await axios.get(
-            `http://ankur-backend-fnzd.vercel.app/api/user/${userFromLocalStorage._id}`
+            `https://ankurproject.onrender.com/api/user/${userFromLocalStorage._id}`
           );
           setUserData(response.data);
         } catch (error) {
