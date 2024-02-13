@@ -1,7 +1,7 @@
-import React from "react";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Peer from "peerjs";
 import "./VideoCall.css";
+import { Link } from "react-router-dom";
 import LinkSection from "./LinkSection";
 
 function VideoCall() {
@@ -57,6 +57,7 @@ function VideoCall() {
       });
     });
   };
+
   return (
     <div className="App">
       <h1>Current user id is {peerId}</h1>
@@ -76,6 +77,9 @@ function VideoCall() {
         />
         <video preload="auto" ref={remoteVideoRef} className="current-video" />
       </div>
+      <Link to="/chat" className="end-call-button">
+        End Call
+      </Link>
       {MeetInfoPopup && (
         <LinkSection setMeetInfoPopup={setMeetInfoPopup} peerId={peerId} />
       )}

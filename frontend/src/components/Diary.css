@@ -11,15 +11,52 @@
   color: #333;
 }
 
-.canvas-container {
-  width: 80%;
-  max-width: 800px; 
+.toggle-container {
+  display: flex;
+  gap: 10px;
 }
 
-.button-container {
+.toggle-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
+
+.active {
+  background-color: #0056b3;
+}
+
+.content-sections {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  gap: 20px;
+}
+
+.canvas-section,
+.text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-area {
+  width: 40rem;
+  height: 40rem; /* Match the height with the canvas */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
 }
 
 .diary-button {
