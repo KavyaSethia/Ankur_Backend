@@ -3,7 +3,7 @@
    
 }
 .B_section2_gridContainer{
-    /* background-color: #d83030; */
+    /* background-color: #d83030;  */
     display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   /* background-color: aqua; */
@@ -23,6 +23,8 @@
     font-weight: 400;
     color: rgb(54, 54, 54);
     padding: 5%;
+    max-height:350px;
+    text-align: center;
 }
 .B_section2_gridDiv:hover .B_section2_gridDivImg{
     -webkit-filter: grayscale(100%); 
@@ -34,7 +36,10 @@
     transition: 0.5s ease-in-out;
 }
 .B_section2_gridDivImg{
-    width: 100%;
+    width: auto;
+    max-height: 200px;
+    text-align: center;
+    display: inline-block;
 }
 .B_section2_gridDivContent{
     margin-left: 20px;
@@ -46,11 +51,12 @@
     margin-top: 20px;
 }
 .B_section2_headText{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 28px;
     font-family: "Poppins", sans-serif;
     margin-top: 20px;
+    text-align: center;
 }
 .B_section2_gridDivRead{
     display: flex;
@@ -103,7 +109,7 @@
         font-size: 11px;
     }
     .B_section2_headText{
-        font-size: 16px;
+        font-size: 20px;
     }
     .B_section2_headTextPara{
         font-size: 14px;

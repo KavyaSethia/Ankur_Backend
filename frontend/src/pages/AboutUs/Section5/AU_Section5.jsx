@@ -1,10 +1,10 @@
 import React from 'react'
 import './AU_section5.css'
-import img1 from '../../../Images/au/aboutUs-img4.jpeg'
-import img2 from '../../../Images/au/aboutUs-img5.jpeg'
-import img3 from '../../../Images/au/aboutUs-img6.jpeg'
-import img4 from '../../../Images/au/1675087726847.jpeg'
 
+import img1 from '../../../Images/au/img1.jpeg'
+import img2 from '../../../Images/au/img2.jpg'
+import img3 from '../../../Images/au/img4.png'
+import img4 from '../../../Images/au/img3.jpg'
 const AU_Section5 = () => {
   return (
     <>
@@ -21,6 +21,7 @@ const AU_Section5 = () => {
                 {/* <div className="AU_section5_gridContainerDiv-text2">Founder and CEO</div> */}
             </div>
         </div>
+        
         <div className="AU_section5_gridContainerDiv">
             <img className='AU_section5_gridContainerDiv-img' src={img2} alt="" />
             <div className="AU_section5_gridContainerDiv-textDiv">
@@ -42,7 +43,7 @@ const AU_Section5 = () => {
                 {/* <div className="AU_section5_gridContainerDiv-text2">Chief Marketing Officer</div> */}
             </div>
         </div>
-        
+       
     </div>
     </div>
     </>
